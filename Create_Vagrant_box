@@ -1,0 +1,21 @@
+  Two mandatory files needed to create Vagrantbox
+  metadata.json
+  box.img(any image)
+  
+ Sample metadata.json
+  {
+  "provider" : "libvirt",
+  "virtualsize": 40,
+  "format" : "qcow2"
+  }
+  
+  Steps to create Vagrant box:
+  /home/ubuntu/box_folder# ls
+  metadata.json SUSE.qcow2
+  /home/ubuntu/box_folder# mv SUSE.qcow2 box.img
+  /home/ubuntu/box_folder# tar -zcvf ./custom_box.box ./metadata.json ./box.img
+  /home/ubuntu/box_folder# vagrant box add --name custom custom_box.box
+
+  
+
+  
