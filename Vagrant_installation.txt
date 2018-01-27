@@ -1,0 +1,13 @@
+Installation of Vagrant in ubuntu:
+  apt-get update
+	apt-get install -y vagrant
+
+	or 
+
+	apt-get install -y curl  dpkg
+	curl -O https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.deb
+	dpkg -i vagrant_2.0.1_x86_64.deb
+
+Install libvirt in Ubuntu:
+  apt-get update
+	apt-get install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
